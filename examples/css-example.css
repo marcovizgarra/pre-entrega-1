@@ -1,0 +1,29 @@
+/*   Alinear tabla    */
+.tabla {                
+    margin: 0 auto;
+}
+
+tbody, thead, tr, td, th {
+    border: 1px solid black;
+}
+
+#form_songs_btn {
+    background-color: red;
+    font-size: 12px;
+    color: white;
+}
+
+#blog_slipknot {
+    text-align: center;
+    
+}
+
+.encabezados{
+    color: red;
+    text-align: center;
+    font-size: 24px;
+}
+
+#enviar_comentario {
+    background-color: white;
+}

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hedving Letters Sans', sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;
+}
+
+.nav-menu {
+    margin: auto;
+    margin-top: 1%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #80808000;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-menu .nav-left {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu .nav-right {
+    display: flex;
+    width: 500px;
+    height: 22px;
+} 
+
+.nav-menu .nav-logo-center img {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style-type: none;
+    display: inline;
+}
+
+.nav-menu ul li a {
+    margin: 15px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-menu .nav-left ul li img {
+    width: 20px;
+}
+
+.nav-right ul li a:hover {
+    color: red;
+}
+
+.nav-right ul li a::before {
+    content: '';
+    width: 0%;
+    border-top: 5px solid red;
+    opacity: 40%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    transition: 0.3s;
+  }
+
+
+.nav-right ul li a:hover::before {
+    width: 100%;
+  }

@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hedving Letters Sans', sans-serif;
+}
+
+.head-home {
+    height: 100vh;
+    position: relative;
+}
+
+/*  --- NAV [incio] --- */
+.nine-point-star img {
+    width: 700px;
+    margin: 0;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 5%;
+}
+
+.nav-menu {
+    margin: auto;
+    margin-top: 1%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-menu .nav-left {
+    width: 500px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu .nav-right {
+    display: flex;
+    width: 500px;
+    height: 22px;
+} 
+
+.nav-menu .nav-logo-center img {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    font-weight: bold;
+    font-size: large;
+    text-transform: uppercase;
+    list-style-type: none;
+    display: inline;
+}
+
+.nav-menu ul li a {
+    margin: 15px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-menu .nav-left ul li img {
+    width: 20px;
+}
+
+.nav-right ul li a:hover {
+    color: red;
+}
+
+.nav-right ul li a::before {
+    content: '';
+    width: 0%;
+    border-top: 5px solid red;
+    opacity: 40%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    transition: 0.3s;
+  }
+
+
+.nav-right ul li a:hover::before {
+    width: 100%;
+  }
+/*  --- NAV [fin] --- */
+
+/* --- BACGROUND VIDEO [incio] --- */
+.video-box video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.video-box::after {
+    content: "";
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* --- BACGROUND VIDEO [fin] --- */
+
+/* --- INFO HOME PAGE - MAIN [inicio] --- */
+.info-home-page {
+    background: linear-gradient(to right, rgb(0 0 0 / .85), rgb(0 0 0 / .85)), url(/assets/images/red-fire-background.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+.band-members-table {
+    display: flex;
+    justify-content: center;
+    border-collapse: separate;
+    flex-wrap: wrap;
+    border-spacing: 10px 5px;
+}
+
+table img {
+    width: 150px;
+    height: auto;
+}
+
+.p-home-container h1 {
+    color: white;
+    text-align: center;
+}
+
+.p-home-container p {
+    color: white;
+    text-align: justify;
+    font-size: 19px;
+    width: 200vh;
+}
+
+/* --- INFO HOME PAGE - MAIN [fin] --- */
+
+/* --- BACKGROUND PAGINAS (Que no son la Home Page) [incio] --- */
+
+.not-home-page {
+    background: linear-gradient(to right, rgb(0 0 0 / .85), rgb(0 0 0 / .85)), url(../assets/images/red-fire-background.jpg);
+    background-repeat: none;
+    background-size: cover;
+    height: 100vh;
+}
+/* --- BACKGROUND PAGINAS (Que no son la Home Page) [fin] --- */
+
+/* --- SHOWS [inicio] --- */
+
+.main-shows {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.main-shows h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* SHOW CONTAINER */
+.show-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.185);
+}
+
+.show-container {
+    padding-top: 20px;
+}
+
+.show-container ul li{
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    margin: 60px;
+}
+
+.show-container ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.show-container ul li img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.show-container ul li a:hover {
+    color: red;
+}
+
+/* SHOW OPTIONS */
+.show-options {
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.show-options h2:hover {
+    color: red
+}
+
+.show-options a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+/* OPTIONS SHOW */
+.option-show {
+    background-color: rgba(0, 0, 0, 0.493);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: large;
+    flex-direction: column;
+}
+
+.option-show a:hover {
+    color: red;
+}
+
+.option-show p {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.show-options div {
+    border: 1px solid red;
+    width: 400px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.show-options .option-show img {
+    width: 398px;
+    height: auto;
+}
+
+.show-options .option-show a img {
+    width: 20px;
+    margin-right: 10px;
+}
+/* --- SHOWS [fin] --- */
+
+/* --- ALBUMS [inicio] ---- */
+
+.album-page h1 {
+    color: white;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.album-container {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.116);
+}
+
+.slipknot-album {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.album-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 0px black;
+    width: 400px;
+    height: 400px;
+}
+
+.album-options p {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.album-options h2 {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px white;
+    padding: 10px;
+    margin-bottom: 50px;
+    background-color: red;
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.651), rgb(255, 0, 0, 0.651));
+}
+
+.album-options a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.album-options a:hover {
+    color: red;
+}
+
+.album-container img {
+    border: 1px solid white;
+    width: 360px;
+    height: auto;
+}
+
+.spotify-playlist {
+    width: 600px;
+    height: 400px;
+}
+/* --- ALBUMS [fin] ---- */
+
+/* --- MERCHANDISING [inicio] --- */
+
+.merchandising-main h1 {
+    color: white;
+    margin: 40px;
+    text-align: center;
+}
+
+.container-merch-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-merch-filter ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-merch-filter ul li {
+    display: inline;
+    padding: 20px;
+    background-color:  rgba(255, 0, 0, 0.493);
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.container-merch-filter ul li a {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.all-product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: rgba(255, 255, 255, 0.164);
+}
+
+.product-container img {
+    width: 300px;
+    height: auto;
+}
+
+.product-container p {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.product-container a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 0, 0, 0.493);
+}
+
+.product-container a:hover {
+    background-color: red;
+}
+/* --- MERCHANDISING [fin] --- */
+
+/* --- FAQ [inicio] --- */
+
+.faq-page {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.faq-page-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: auto;
+}
+
+.faq-page-container h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.answer-question-container {
+    margin: 30px;
+}
+
+.answer-question-container ul li {
+    color: white;
+    font-size: large;
+}
+
+.answer-question-container h2 {
+    color: white;
+    font-weight: bold;
+    border: 1px white;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.212);
+}
+
+.answer-question-container ul li {
+    margin-top: 15px;
+    margin-left: 45px;
+}
+/* --- FAQ [fin] --- */
+
+/* --- FOOTER [inicio] ---*/
+
+.footer-container p {
+    color: white;
+}
+
+.footer-container img {
+    width: 20px;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(to top, rgb(97, 0, 0), rgba(255, 0, 0, 0));
+}
+
+.footer-social-media img {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-social-media ul li {
+    display: inline;
+}
+
+/* --- FOOTER [fin] ---*/
+
+/* --- FOOTER [inicio] ---*/
+
+#home-page-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: black;
+}
